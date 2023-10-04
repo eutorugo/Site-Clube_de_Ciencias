@@ -450,6 +450,7 @@ p{
     height: auto;
     background-color:#103973;
     padding-top: 50px;
+    padding-bottom: 20px;
     border-radius: 30px;
 }
 
@@ -459,11 +460,6 @@ p{
     text-align: justify;
 }
 
-.caixa_maior_baixo img{
-    
-    width: 80%;
-    border-radius: 50px;
-}
 
 .caixa_texto_vantagens{
     padding-top: 5px;
@@ -477,6 +473,53 @@ p{
     font-family: 'Inter', sans-serif;
     color: white;
 }
+
+.caixa_horarios{
+    width: 55vh;
+    height: 55vh;
+    border-radius: 4vh;
+    border: 2vh solid black;
+}
+
+
+table.blueTable {
+    border: 0px solid #1C6EA4;
+    background-color: #EEEEEE;
+    border-radius: 2vh;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    padding: 10px 10px;
+  }
+  table.blueTable tbody td {
+    font-size: 17px;
+    color: #333333;
+  }
+  table.blueTable thead {
+    background: #FF9A2C;
+  }
+  table.blueTable thead th {
+    font-size: 23px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  table.blueTable tfoot td {
+    font-size: 8px;
+  }
+  table.blueTable tfoot.links {
+    text-align: right;
+  }
+  table.blueTable tfoot.links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 30px;
+  }
 
 .caixa_texto_vantagens p{
     padding: 30px;
