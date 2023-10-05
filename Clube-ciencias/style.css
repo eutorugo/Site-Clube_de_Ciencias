@@ -475,7 +475,7 @@ p{
 }
 
 .caixa_horarios{
-    width: 55vh;
+    width: 60vh;
     height: 55vh;
     border-radius: 4vh;
     border: 2vh solid black;
@@ -483,7 +483,6 @@ p{
 
 
 table.blueTable {
-    border: 0px solid #1C6EA4;
     background-color: #EEEEEE;
     border-radius: 2vh;
     width: 100%;
@@ -491,18 +490,43 @@ table.blueTable {
     text-align: left;
     border-collapse: collapse;
   }
+
   table.blueTable td, table.blueTable th {
+    border: 1px solid white;
     padding: 10px 10px;
   }
+ 
   table.blueTable tbody td {
     font-size: 17px;
-    color: #333333;
+    font-style: bold;
+    color: #103973;
   }
+
+  table.blueTable tbody td span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #103973;
+  }
+
   table.blueTable thead {
-    background: #FF9A2C;
+    background: #FC6335;
+    height: 10vh;
   }
+
+  table.blueTable thead th.amarelo {
+    background: rgba(249, 187, 0, 0.842);
+    height: 10vh;
+  }
+
+  table.blueTable tbody td.turno{
+    background-color: #033780;
+    color: white;
+  }
+  
+
   table.blueTable thead th {
-    font-size: 23px;
+    border-radius: 2vh 2vh 0vh 0vh;
+    font-size: 40px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
@@ -524,6 +548,14 @@ table.blueTable {
 .caixa_texto_vantagens p{
     padding: 30px;
 }
+
+.turno_preclube {
+    height: 15%;
+  }
+
+  .turno_clube{
+    height: 15%;
+  }
 
 /* como surgiu */
 .conteudo{
