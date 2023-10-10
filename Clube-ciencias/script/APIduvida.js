@@ -6,8 +6,9 @@
 
             var respostaEmJson = await not.json()
 
-            document.getElementById("pergunta").innerText = respostaEmJson.pergunta
-            document.getElementById("collapseExample").innerText = respostaEmJson.resposta
+            document.getElementById("pergunta").querySelector("span").innerText = respostaEmJson.pergunta
+            document.getElementById("collapseExample").querySelector(".card-body").innerText = respostaEmJson.resposta;
+
 
             console.log(respostaEmJson)
         }
