@@ -4,18 +4,10 @@
             })
 
     var respostaEmJson = await not.json()
+    var dados = respostaEmJson.result[0]
 
-    document.getElementById("1h").innerText = respostaEmJson.titulo1
-    document.getElementById("1p").innerText = respostaEmJson.conteudo1
-    document.getElementById("1i").src = respostaEmJson.img1
-
-    document.getElementById("2h").innerText = respostaEmJson.titulo2
-    document.getElementById("2p").innerText = respostaEmJson.conteudo2
-    document.getElementById("2i").src = respostaEmJson.img2
-
-    document.getElementById("3h").innerText = respostaEmJson.titulo3
-    document.getElementById("3p").innerText = respostaEmJson.conteudo3
-    document.getElementById("3i").src = respostaEmJson.img3
+    document.getElementById("descClube").innerText = dados.descrica
+    document.getElementById("imgClube").src = dados.image
 
     console.log(respostaEmJson)
         }
