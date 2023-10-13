@@ -5,32 +5,34 @@ async function Laboratorios(){
     })
 
     var respostaEmJson = await resultado.json()
+    var resultadoAPI = respostaEmJson.result
+    return resultadoAPI
+}
+async function APRESENTAR (){
 
-    var resultadoAPI = respostaEmJson.result[4]
-    
-    document.getElementById("tituloLab-1").innerText = resultadoAPI.titulo
-    document.getElementById("descLab-1").innerText = resultadoAPI.descricao
+    var resultadoAPI = await Laboratorios();
+    console.log(resultadoAPI);
 
-    var resultadoAPI = respostaEmJson.result[3]
+    document.getElementById("tituloLab-1").innerText = resultadoAPI[4].titulo
+    document.getElementById("descLab-1").innerText = resultadoAPI[4].descricao
 
-    document.getElementById("tituloLab-2").innerText = resultadoAPI.titulo
-    document.getElementById("descLab-2").innerText = resultadoAPI.descricao
+    document.getElementById("tituloLab-2").innerText = resultadoAPI[1].titulo
+    document.getElementById("descLab-2").innerText = resultadoAPI[1].descricao
 
-    var resultadoAPI = respostaEmJson.result[0]
 
-    document.getElementById("tituloLab-3").innerText = resultadoAPI.titulo
-    document.getElementById("descLab-3").innerText = resultadoAPI.descricao
+    document.getElementById("tituloLab-3").innerText = resultadoAPI[2].titulo
+    document.getElementById("descLab-3").innerText = resultadoAPI[2].descricao
 
-    var resultadoAPI = respostaEmJson.result[1]
 
-    document.getElementById("tituloLab-4").innerText = resultadoAPI.titulo
-    document.getElementById("descLab-4").innerText = resultadoAPI.descricao
+    document.getElementById("tituloLab-4").innerText = resultadoAPI[0].titulo
+    document.getElementById("descLab-4").innerText = resultadoAPI[0].descricao
 
-    var resultadoAPI = respostaEmJson.result[2]
 
-    document.getElementById("tituloLab-5").innerText = resultadoAPI.titulo
-    document.getElementById("descLab-5").innerText = resultadoAPI.descricao
+    document.getElementById("tituloLab-5").innerText = resultadoAPI[3].titulo
+    document.getElementById("descLab-5").innerText = resultadoAPI[3].descricao
+}
 
+APRESENTAR()
    
 
 
@@ -38,10 +40,6 @@ async function Laboratorios(){
     
 
 
-    console.log(respostaEmJson)
-}
-
-Laboratorios()
 
 
 
