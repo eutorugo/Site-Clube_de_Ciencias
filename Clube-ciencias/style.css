@@ -586,24 +586,24 @@ table.blueTable {
 }
 
 .profs{
-    
     margin: 20px;
     width: 450px;
     height: 150px;
-    display: flex;
-
-}
-
-.profs > img {
+    display: flex; 
     max-width: fit-content;
 }
 
+
 #nome {
     padding-top: 20px;
-    /* border:1px solid red; */
     color:white;
     padding-left: 40px;
 }
+
+
+
+
+
 
 /*RODAPE*/
 footer{
