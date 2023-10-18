@@ -593,7 +593,9 @@ table.blueTable {
     max-width: fit-content;
 }
 
-
+.profs>img{
+    border-radius: 50%;
+}
 #nome {
     padding-top: 20px;
     color:white;
